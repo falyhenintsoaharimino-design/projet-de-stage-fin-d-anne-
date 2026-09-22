@@ -1,0 +1,76 @@
+.hero {
+  padding-block: var(--space-8) var(--space-7);
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.hero h1 { max-width: 14ch; }
+.hero__lede {
+  font-size: var(--text-md);
+  color: var(--color-ink-soft);
+  max-width: 44ch;
+  margin-top: var(--space-4);
+}
+
+.ask-bar {
+  margin-top: var(--space-6);
+  display: flex;
+  gap: var(--space-3);
+  background: var(--color-surface);
+  border: var(--border-w) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2);
+  box-shadow: 0 1px 0 var(--color-border);
+}
+.ask-bar input {
+  flex: 1;
+  border: none;
+  padding: var(--space-4);
+  background: transparent;
+  font-size: var(--text-base);
+}
+.ask-bar input:focus { outline: none; }
+
+.ask-bar__examples {
+  margin-top: var(--space-4);
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.ask-bar__examples span { color: var(--color-ink-soft); font-size: var(--text-sm); }
+
+.hero__figure {
+  border: var(--border-w) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--space-6);
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero__figure .msg--assistant { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.2); color: #fff; }
+.hero__figure .confidence__bar { background: rgba(255,255,255,.25); }
+
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  padding-block: var(--space-6);
+  border-top: var(--border-w) solid var(--color-border);
+  border-bottom: var(--border-w) solid var(--color-border);
+}
+.stats-strip__item .num { font-size: var(--text-2xl); font-weight: 800; color: var(--color-primary); }
+.stats-strip__item p { margin-top: var(--space-1); color: var(--color-ink-soft); font-size: var(--text-sm); }
+
+@media (max-width: 900px) {
+  .hero__grid { grid-template-columns: 1fr; }
+  .stats-strip { grid-template-columns: 1fr; gap: var(--space-4); }
+}

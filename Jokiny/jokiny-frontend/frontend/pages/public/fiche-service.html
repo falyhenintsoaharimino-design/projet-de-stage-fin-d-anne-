@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiche service — Jokiny</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+</head>
+<body data-page="fiche-service">
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container site-header__bar">
+      <a class="brand" href="index.html"><span class="brand__mark">SO</span> Jokiny</a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html" data-nav-link="accueil">Accueil</a>
+        <a href="catalogue-services.html" data-nav-link="catalogue">Services</a>
+        <a href="assistant.html" data-nav-link="assistant">Assistant</a>
+        <a href="faq.html" data-nav-link="faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--outline" href="connexion.html">Connexion</a>
+        <a class="btn btn--primary" href="inscription.html">Créer un compte</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu" class="container" style="max-width: var(--container-narrow); padding-block: var(--space-6)">
+    <p><a href="catalogue-services.html">← Retour au catalogue</a></p>
+
+    <span class="badge badge--pending" id="fiche-rubrique">Citoyenneté</span>
+    <h1 id="fiche-nom" style="margin-top: var(--space-3)">Carte d'identité nationale (CIN)</h1>
+    <p id="fiche-resume" style="color: var(--color-ink-soft)">
+      Première demande ou renouvellement de la CIN.
+    </p>
+
+    <section class="panel">
+      <h3>Pièces à fournir</h3>
+      <ul id="fiche-pieces" class="result-panel__pieces">
+        <li>— Acte de naissance récent</li>
+        <li>— 2 photos d'identité</li>
+        <li>— Certificat de résidence</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h3>Étapes de la procédure</h3>
+      <div class="steps">
+        <div class="step">
+          <div><h4>Réunir les pièces</h4><p>Préparer le dossier complet avant de vous déplacer.</p></div>
+        </div>
+        <div class="step">
+          <div><h4>Déposer la demande</h4><p id="fiche-lieu">Au fokontany puis à la commune.</p></div>
+        </div>
+        <div class="step">
+          <div><h4>Retirer le document</h4><p id="fiche-delai">Délai indicatif : 2 à 4 semaines.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <a class="btn btn--accent btn--block" href="../citoyen/prendre-rendez-vous.html">Prendre rendez-vous</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__base">
+      <span>© 2026 Jokiny — projet de licence.</span>
+      <a href="index.html">Retour à l'accueil</a>
+    </div>
+  </footer>
+
+  <script src="../../js/api.js"></script>
+  <script src="../../js/main.js"></script>
+  <script>
+    // Remplit la fiche à partir de ?id=... et du catalogue mock.
+    const id = new URLSearchParams(location.search).get("id");
+    if (id) {
+      window.JokinyAPI.listServices().then((services) => {
+        const s = services.find((s) => s.id === id);
+        if (!s) return;
+        document.querySelector("#fiche-rubrique").textContent = s.rubrique;
+        document.querySelector("#fiche-nom").textContent = s.nom;
+        document.querySelector("#fiche-resume").textContent = s.resume;
+        document.querySelector("#fiche-lieu").textContent = s.lieu;
+        document.querySelector("#fiche-delai").textContent = `Délai indicatif : ${s.delai}`;
+        document.querySelector("#fiche-pieces").innerHTML = s.pieces.map((p) => `<li>— ${p}</li>`).join("");
+      });
+    }
+  </script>
+</body>
+</html>

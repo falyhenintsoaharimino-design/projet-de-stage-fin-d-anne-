@@ -1,0 +1,29 @@
+<!--
+  Snippet de référence pour l'en-tête public.
+  Le projet est en HTML statique (pas de moteur de templates), donc ce bloc
+  est copié dans chaque page publique ; seul le chemin relatif des liens et
+  data-nav-link changent. Si le back-end ajoute un moteur de templates
+  (Jinja, EJS, Blade…), ce fichier devient le vrai partiel inclus partout.
+-->
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">SO</span>
+      Jokiny — Service Orientation
+    </a>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html" data-nav-link="accueil">Accueil</a>
+      <a href="catalogue-services.html" data-nav-link="catalogue">Services</a>
+      <a href="assistant.html" data-nav-link="assistant">Assistant</a>
+      <a href="faq.html" data-nav-link="faq">FAQ</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--outline" href="connexion.html">Connexion</a>
+      <a class="btn btn--primary" href="inscription.html">Créer un compte</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+    </div>
+  </div>
+</header>

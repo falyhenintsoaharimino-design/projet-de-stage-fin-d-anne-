@@ -1,0 +1,75 @@
+/*
+  Jokiny — design tokens
+  "Jokiny" (malgache : rapide, direct) est le nom de travail de la plateforme.
+  Renommez-le librement dans tout le projet si un autre nom est choisi.
+*/
+
+:root {
+  /* --- Couleurs --- */
+  --color-ink: #1B2421;          /* texte principal */
+  --color-ink-soft: #4B564F;     /* texte secondaire */
+  --color-paper: #F2F4F1;        /* fond de page (gris-sauge très clair, pas blanc pur) */
+  --color-surface: #FFFFFF;      /* fond des blocs (formulaires, panneaux) */
+  --color-border: #DADFDA;       /* lignes de séparation, contours */
+
+  --color-primary: #0F3D3E;      /* teal profond — institution, confiance */
+  --color-primary-strong: #0A2C2D;
+  --color-primary-soft: #E3ECEA; /* fond teinté très clair pour zones actives */
+
+  --color-accent: #E08D3C;       /* ocre terre — appels à l'action, mise en avant */
+  --color-accent-strong: #C4732A;
+
+  --color-success: #2F8F5B;
+  --color-success-soft: #E6F3EC;
+  --color-warning: #C4572A;
+  --color-warning-soft: #FBEAE1;
+
+  /* --- Typographie --- */
+  --font-base: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.85rem;
+  --text-2xl: 2.5rem;
+  --text-3xl: 3.25rem;
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* --- Espacement (échelle 4px) --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  /* --- Forme --- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --border-w: 1px;
+
+  /* --- Mise en page --- */
+  --container-max: 1180px;
+  --container-narrow: 760px;
+
+  /* --- Mouvement --- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 180ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

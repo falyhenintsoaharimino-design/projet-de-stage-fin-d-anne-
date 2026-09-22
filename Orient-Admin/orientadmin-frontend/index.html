@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil - OrientAdmin</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body data-role="visiteur" data-page="accueil" data-root="./">
+  <div id="site-header"></div>
+  <main id="contenu">
+    <div class="hero">
+      <div class="container">
+        <h1>Trouvez le bon service administratif, sans vous déplacer pour rien</h1>
+        <p class="lead">Décrivez votre besoin, notre assistant vous oriente, vous indique les documents à fournir et vous propose un rendez-vous.</p>
+        <div class="hero__search">
+          <form class="search-bar" action="pages/public/assistant.html" method="get">
+            <input type="search" placeholder="Que souhaitez-vous faire ? Ex. : obtenir un acte de naissance" aria-label="Décrire mon besoin">
+            <a class="btn btn--primary" href="pages/public/assistant.html">Demander à l'assistant</a>
+          </form>
+        </div>
+        <div class="suggestions">
+          <button class="suggestion" type="button" data-suggestion="Acte de naissance">Acte de naissance</button>
+          <button class="suggestion" type="button" data-suggestion="Carte d'identité">Carte d'identité</button>
+          <button class="suggestion" type="button" data-suggestion="Casier judiciaire">Casier judiciaire</button>
+          <button class="suggestion" type="button" data-suggestion="Créer une entreprise">Créer une entreprise</button>
+        </div>
+      </div>
+    </div><section class="section section--soft">
+      <div class="container">
+        <h2 class="section__title">Comment ça marche</h2>
+        <div class="grid grid--3">
+          <div class="step">
+            <div class="step__number">1</div>
+            <h3>Décrivez votre besoin</h3>
+            <p class="text-muted">Écrivez simplement ce que vous voulez faire.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">2</div>
+            <h3>Soyez orienté</h3>
+            <p class="text-muted">Service compétent, procédure et pièces à fournir.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">3</div>
+            <h3>Prenez rendez-vous</h3>
+            <p class="text-muted">Choisissez un créneau et recevez des rappels.</p>
+          </div>
+        </div>
+        <a class="mt-5" href="pages/public/comment-ca-marche.html">En savoir plus sur la démarche →</a>
+      </div>
+    </section><section class="section">
+      <div class="container">
+        <h2 class="section__title">Services les plus demandés</h2>
+        <div class="grid grid--4">
+          <div class="card">
+            <h3 class="card__title">État civil</h3>
+            <p class="service-card__text">Actes de naissance, mariage, décès</p>
+            <a href="pages/public/services.html">Voir les procédures →</a>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Fiscalité</h3>
+            <p class="service-card__text">Impôts, taxes, attestations fiscales</p>
+            <a href="pages/public/services.html">Voir les procédures →</a>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Urbanisme et foncier</h3>
+            <p class="service-card__text">Permis de construire, cadastre, titres</p>
+            <a href="pages/public/services.html">Voir les procédures →</a>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Affaires sociales</h3>
+            <p class="service-card__text">Aides, allocations, dossiers sociaux</p>
+            <a href="pages/public/services.html">Voir les procédures →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="./assets/js/config/nav-config.js"></script>
+  <script src="./assets/js/components/layout.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

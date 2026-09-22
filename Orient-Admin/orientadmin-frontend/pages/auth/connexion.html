@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connexion - OrientAdmin</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body data-role="visiteur" data-page="connexion" data-root="../../">
+  <div id="site-header"></div>
+  <main id="contenu">
+    <div style="max-width:420px;margin:0 auto">
+      <div class="card">
+        <h3>Connexion</h3>
+        <form>
+          <div class="field"><label for="identifiant">E-mail ou téléphone</label><input type="text" id="identifiant" name="identifiant" required></div>
+          <div class="field"><label for="mdp">Mot de passe</label><input type="password" id="mdp" name="mdp" required></div>
+          <p class="text-small"><a href="mot-de-passe-oublie.html">Mot de passe oublié ?</a></p>
+          <button class="btn btn--primary" type="button">Se connecter</button>
+        </form>
+        <div class="card__footer">
+          <p>Pas encore de compte ? <a href="inscription.html">S'inscrire</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../../assets/js/config/nav-config.js"></script>
+  <script src="../../assets/js/components/layout.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

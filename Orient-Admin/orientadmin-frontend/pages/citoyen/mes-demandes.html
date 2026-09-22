@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes demandes - OrientAdmin</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body data-role="citoyen" data-page="mes-demandes" data-root="../../">
+  <div id="site-header"></div>
+  <div class="app-shell">
+    <aside id="site-sidebar"></aside>
+    <main id="contenu" class="app-shell__main">
+      <header class="page-head">
+        <div>
+          <h1>Mes demandes</h1>
+        </div>
+        <div class="page-head__actions"><a class="btn btn--primary" href="assistant.html">Nouvelle demande</a></div>
+      </header><div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Référence</th>
+              <th>Objet</th>
+              <th>Date</th>
+              <th>Statut</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#D-1042</td>
+              <td>Légalisation de diplôme</td>
+              <td>24/09/2026</td>
+              <td><span class="badge badge--success">RDV pris</span></td>
+            </tr>
+            <tr>
+              <td>#D-1038</td>
+              <td>Certificat de résidence</td>
+              <td>18/09/2026</td>
+              <td><span class="badge badge--neutral">Clôturée</span></td>
+            </tr>
+            <tr>
+              <td>#D-1029</td>
+              <td>Carte d'identité</td>
+              <td>02/09/2026</td>
+              <td><span class="badge badge--warning">En traitement</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <div id="site-footer"></div>
+  <script src="../../assets/js/config/nav-config.js"></script>
+  <script src="../../assets/js/components/layout.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jokiny — Trouvez le bon service administratif</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/pages/accueil.css" />
+</head>
+<body data-page="accueil">
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container site-header__bar">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">SO</span>
+        Jokiny — Service Orientation
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html" data-nav-link="accueil">Accueil</a>
+        <a href="catalogue-services.html" data-nav-link="catalogue">Services</a>
+        <a href="assistant.html" data-nav-link="assistant">Assistant</a>
+        <a href="faq.html" data-nav-link="faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--outline" href="connexion.html">Connexion</a>
+        <a class="btn btn--primary" href="inscription.html">Créer un compte</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero container">
+      <div class="hero__grid">
+        <div>
+          <h1>Trouvez le bon service, sans détour.</h1>
+          <p class="hero__lede">
+            Décrivez votre besoin en une phrase : Jokiny identifie le service administratif compétent,
+            les pièces à fournir et vous propose un rendez-vous.
+          </p>
+
+          <form class="ask-bar" action="assistant.html" method="get">
+            <input
+              type="text"
+              name="q"
+              placeholder="Ex. : je veux un extrait d'acte de naissance"
+              aria-label="Décrivez votre demande"
+            />
+            <button class="btn btn--accent" type="submit">Demander</button>
+          </form>
+
+          <div class="ask-bar__examples">
+            <span>Exemples :</span>
+            <a class="chip" href="assistant.html?q=renouveler%20ma%20CIN">Renouveler ma CIN</a>
+            <a class="chip" href="assistant.html?q=obtenir%20un%20passeport">Obtenir un passeport</a>
+            <a class="chip" href="assistant.html?q=créer%20une%20société">Créer une société</a>
+          </div>
+        </div>
+
+        <div class="hero__figure">
+          <div>
+            <p style="opacity:.8; font-size: var(--text-sm); margin-bottom: var(--space-3)">Aperçu de l'assistant</p>
+            <p class="msg msg--assistant" style="max-width:100%">
+              Il s'agit d'une demande de <strong>CIN</strong>. Pièces à prévoir : acte de naissance,
+              2 photos, certificat de résidence.
+            </p>
+          </div>
+          <div class="confidence">
+            <div class="confidence__bar"><div class="confidence__fill" style="width:88%"></div></div>
+            <span class="confidence__value">88 %</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container stats-strip">
+      <div class="stats-strip__item">
+        <div class="num">16</div>
+        <p>rubriques de services couvertes</p>
+      </div>
+      <div class="stats-strip__item">
+        <div class="num">10+</div>
+        <p>services documentés en première version</p>
+      </div>
+      <div class="stats-strip__item">
+        <div class="num">&lt; 2 min</div>
+        <p>pour être orienté vers le bon guichet</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section__head">
+        <h2>Services les plus demandés</h2>
+        <p>Un aperçu du catalogue complet, consultable et filtrable.</p>
+      </div>
+      <ul class="entry-list">
+        <li class="entry-row">
+          <span class="entry-row__icon">EC</span>
+          <span class="entry-row__body">
+            <h3>Acte de naissance</h3>
+            <p>Copie ou extrait, à la commune du lieu de naissance.</p>
+          </span>
+          <span class="entry-row__meta">24 à 72 h</span>
+        </li>
+        <li class="entry-row">
+          <span class="entry-row__icon">CIN</span>
+          <span class="entry-row__body">
+            <h3>Carte d'identité nationale</h3>
+            <p>Première demande ou renouvellement.</p>
+          </span>
+          <span class="entry-row__meta">2 à 4 semaines</span>
+        </li>
+        <li class="entry-row">
+          <span class="entry-row__icon">PP</span>
+          <span class="entry-row__body">
+            <h3>Passeport</h3>
+            <p>Établissement ou renouvellement.</p>
+          </span>
+          <span class="entry-row__meta">2 à 6 semaines</span>
+        </li>
+      </ul>
+      <p style="margin-top: var(--space-5)">
+        <a class="btn--text" href="catalogue-services.html">Voir tout le catalogue →</a>
+      </p>
+    </section>
+
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section__head">
+          <h2>Comment ça marche</h2>
+          <p>Trois étapes, du besoin exprimé jusqu'au rendez-vous confirmé.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div>
+              <h3>Décrivez votre besoin</h3>
+              <p>En langage courant, sans jargon administratif.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Recevez l'orientation</h3>
+              <p>Service compétent, documents requis, délais et frais indicatifs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div>
+              <h3>Prenez rendez-vous</h3>
+              <p>Choisissez un créneau et recevez un rappel avant le jour J.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand__mark">SO</span> Jokiny</a>
+        <p style="margin-top: var(--space-3)">
+          Plateforme d'orientation des citoyens vers les services administratifs.
+          Informations indicatives ; la décision reste du ressort du service concerné.
+        </p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="catalogue-services.html">Catalogue des services</a></li>
+          <li><a href="assistant.html">Assistant d'orientation</a></li>
+          <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Aide</h4>
+        <ul>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__base">
+      <span>© 2026 Jokiny — projet de licence.</span>
+      <span>Données publiques revalidées auprès des administrations concernées.</span>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon espace — Jokiny</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/pages/dashboard.css" />
+</head>
+<body data-page="dashboard">
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container site-header__bar">
+      <a class="brand" href="../public/index.html"><span class="brand__mark">SO</span> Jokiny</a>
+      <div class="header-actions">
+        <span class="badge badge--pending">Citoyen</span>
+        <a class="btn btn--outline btn--sm" href="../public/index.html">Se déconnecter</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="app-sidebar">
+      <nav aria-label="Navigation de mon espace">
+        <a href="tableau-de-bord.html" aria-current="page">Tableau de bord</a>
+        <a href="assistant-chat.html">Assistant</a>
+        <a href="mes-demandes.html">Mes demandes</a>
+        <a href="prendre-rendez-vous.html">Prendre rendez-vous</a>
+        <a href="mes-rendez-vous.html">Mes rendez-vous</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="profil.html">Profil</a>
+      </nav>
+    </aside>
+
+    <main id="contenu" class="app-main">
+      <div class="dash-head">
+        <div>
+          <h1 style="font-size: var(--text-xl)">Bonjour, Fara</h1>
+          <p style="color: var(--color-ink-soft); margin: 0">Voici où en sont vos démarches.</p>
+        </div>
+        <a class="btn btn--accent" href="../public/assistant.html">Nouvelle demande</a>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat__value">1</div>
+          <div class="stat__label">Rendez-vous à venir</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">2</div>
+          <div class="stat__label">Demandes en cours</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">1</div>
+          <div class="stat__label">Document manquant</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value">3</div>
+          <div class="stat__label">Démarches terminées</div>
+        </div>
+      </div>
+
+      <div class="dash-columns">
+        <section class="panel">
+          <div class="panel__title">
+            <h3>Mes demandes récentes</h3>
+            <a class="btn--text" href="mes-demandes.html">Tout voir</a>
+          </div>
+          <ul class="entry-list">
+            <li class="entry-row">
+              <span class="entry-row__icon">CIN</span>
+              <span class="entry-row__body">
+                <h3>Renouvellement CIN</h3>
+                <p>Rendez-vous confirmé — commune d'Antananarivo I</p>
+              </span>
+              <span class="badge badge--pending">En cours</span>
+            </li>
+            <li class="entry-row">
+              <span class="entry-row__icon">PP</span>
+              <span class="entry-row__body">
+                <h3>Passeport</h3>
+                <p>Certificat de résidence manquant</p>
+              </span>
+              <span class="badge badge--warning">Action requise</span>
+            </li>
+            <li class="entry-row">
+              <span class="entry-row__icon">EC</span>
+              <span class="entry-row__body">
+                <h3>Acte de naissance</h3>
+                <p>Délivré le 12 septembre 2026</p>
+              </span>
+              <span class="badge badge--success">Terminée</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h3>Prochain rendez-vous</h3>
+          <p style="margin-top: var(--space-3)">
+            <strong>Renouvellement CIN</strong><br />
+            Mardi 29 septembre 2026, 9h30<br />
+            Commune d'Antananarivo I, guichet 3
+          </p>
+          <a class="btn btn--outline btn--block" href="mes-rendez-vous.html">Gérer le rendez-vous</a>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

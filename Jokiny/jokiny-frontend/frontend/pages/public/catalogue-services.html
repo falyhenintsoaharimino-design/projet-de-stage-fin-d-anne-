@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogue des services — Jokiny</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/pages/catalogue.css" />
+</head>
+<body data-page="catalogue">
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container site-header__bar">
+      <a class="brand" href="index.html"><span class="brand__mark">SO</span> Jokiny</a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html" data-nav-link="accueil">Accueil</a>
+        <a href="catalogue-services.html" data-nav-link="catalogue">Services</a>
+        <a href="assistant.html" data-nav-link="assistant">Assistant</a>
+        <a href="faq.html" data-nav-link="faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--outline" href="connexion.html">Connexion</a>
+        <a class="btn btn--primary" href="inscription.html">Créer un compte</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu" class="container">
+    <div class="section__head" style="margin-top: var(--space-6)">
+      <h1 style="font-size: var(--text-2xl)">Catalogue des services</h1>
+      <p>Missions, procédures et pièces requises pour chaque service administratif.</p>
+    </div>
+
+    <div class="catalogue-toolbar">
+      <input id="catalogue-search" class="input" type="search" placeholder="Rechercher un service…" />
+    </div>
+
+    <div id="rubrique-rail" class="rubrique-rail" aria-label="Filtrer par rubrique"></div>
+
+    <div id="service-grid" class="service-grid" aria-live="polite">
+      <p>Chargement du catalogue…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__base">
+      <span>© 2026 Jokiny — projet de licence.</span>
+      <a href="index.html">Retour à l'accueil</a>
+    </div>
+  </footer>
+
+  <script src="../../js/api.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/catalogue.js"></script>
+</body>
+</html>

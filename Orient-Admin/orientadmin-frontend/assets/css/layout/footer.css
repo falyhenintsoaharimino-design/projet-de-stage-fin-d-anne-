@@ -1,0 +1,12 @@
+/* Pied de page */
+.site-footer {
+  background: var(--color-text); color: #cbd5e1;
+  padding: var(--space-5) var(--space-5); font-size: 0.875rem;
+}
+.site-footer__inner {
+  max-width: var(--container-width); margin: 0 auto;
+  display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap;
+}
+.site-footer a { color: #cbd5e1; }
+.site-footer__links { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+.site-footer__links > * + * { margin-left: var(--space-4); }

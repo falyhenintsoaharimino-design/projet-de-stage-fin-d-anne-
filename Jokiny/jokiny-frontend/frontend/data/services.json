@@ -1,0 +1,62 @@
+[
+  {
+    "id": "acte-naissance",
+    "rubrique": "État civil",
+    "nom": "Acte de naissance",
+    "resume": "Copie ou extrait d'acte de naissance pour un dossier administratif.",
+    "delai": "24 à 72 h",
+    "frais": "Gratuit à faible",
+    "lieu": "Commune du lieu de naissance",
+    "pieces": ["Livret de famille ou CIN d'un parent", "Formulaire de demande complété"]
+  },
+  {
+    "id": "cin",
+    "rubrique": "Citoyenneté",
+    "nom": "Carte d'identité nationale (CIN)",
+    "resume": "Première demande ou renouvellement de la CIN.",
+    "delai": "2 à 4 semaines",
+    "frais": "Variable selon commune",
+    "lieu": "Fokontany puis commune",
+    "pieces": ["Acte de naissance récent", "2 photos d'identité", "Certificat de résidence"]
+  },
+  {
+    "id": "passeport",
+    "rubrique": "Conduite et transport",
+    "nom": "Passeport",
+    "resume": "Établissement ou renouvellement d'un passeport malgache.",
+    "delai": "2 à 6 semaines",
+    "frais": "Payant, tarif fixe",
+    "lieu": "Direction générale de l'immigration",
+    "pieces": ["CIN", "Acte de naissance", "2 photos aux normes", "Justificatif de paiement"]
+  },
+  {
+    "id": "permis-conduire",
+    "rubrique": "Conduite et transport",
+    "nom": "Permis de conduire",
+    "resume": "Première demande, renouvellement ou duplicata du permis.",
+    "delai": "2 à 5 semaines",
+    "frais": "Payant",
+    "lieu": "Service des transports terrestres",
+    "pieces": ["CIN", "Certificat médical", "Attestation d'auto-école (première demande)"]
+  },
+  {
+    "id": "creation-societe",
+    "rubrique": "Entreprises et industries",
+    "nom": "Création d'entreprise",
+    "resume": "Immatriculation d'une société via le guichet unique.",
+    "delai": "3 à 10 jours",
+    "frais": "Payant, selon forme juridique",
+    "lieu": "Guichet unique EDBM",
+    "pieces": ["Statuts de la société", "CIN des associés", "Justificatif d'adresse du siège"]
+  },
+  {
+    "id": "bulletin-n3",
+    "rubrique": "Sécurité et justice",
+    "nom": "Bulletin n°3 (casier judiciaire)",
+    "resume": "Extrait de casier judiciaire pour un dossier d'emploi ou de visa.",
+    "delai": "1 à 3 semaines",
+    "frais": "Faible",
+    "lieu": "Tribunal du lieu de naissance",
+    "pieces": ["CIN", "Acte de naissance"]
+  }
+]

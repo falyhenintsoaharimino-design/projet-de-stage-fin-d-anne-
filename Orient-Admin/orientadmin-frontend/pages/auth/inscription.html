@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscription - OrientAdmin</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body data-role="visiteur" data-page="inscription" data-root="../../">
+  <div id="site-header"></div>
+  <main id="contenu">
+    <div style="max-width:480px;margin:0 auto">
+      <div class="card">
+        <h3>Créer un compte</h3>
+        <form>
+          <div class="field"><label for="nom">Nom complet</label><input type="text" id="nom" name="nom" required></div>
+          <div class="field"><label for="email">E-mail</label><input type="email" id="email" name="email" required></div>
+          <div class="field"><label for="tel">Téléphone</label><input type="tel" id="tel" name="tel"></div>
+          <div class="field"><label for="mdp">Mot de passe</label><input type="password" id="mdp" name="mdp" required></div>
+          <div class="field">
+            <label for="canal">Canal de notification préféré</label>
+            <select id="canal" name="canal">
+              <option value="E-mail">E-mail</option>
+              <option value="SMS">SMS</option>
+              <option value="E-mail et SMS">E-mail et SMS</option>
+            </select>
+          </div>
+          <button class="btn btn--primary" type="button">Créer mon compte</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../../assets/js/config/nav-config.js"></script>
+  <script src="../../assets/js/components/layout.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

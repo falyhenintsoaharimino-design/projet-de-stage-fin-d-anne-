@@ -1,0 +1,21 @@
+/* Assistant conversationnel */
+.chat { display: flex; flex-direction: column; min-height: 460px; }
+.chat__messages { flex: 1; display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-2) 0 var(--space-4); }
+.bubble { max-width: 82%; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); font-size: 0.95rem; }
+.bubble--bot { background: var(--color-primary-soft); align-self: flex-start; }
+.bubble--user { background: var(--color-primary); color: #fff; align-self: flex-end; }
+.chat__form { display: flex; gap: var(--space-2); border-top: 1px solid var(--color-border); padding-top: var(--space-4); }
+.chat__form input { flex: 1; }
+
+.suggestions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.suggestions > * + * { margin-left: var(--space-2); }
+.suggestion {
+  border: 1px solid var(--color-border); background: var(--color-surface);
+  border-radius: 999px; padding: 6px 14px; font-size: 0.875rem;
+}
+.suggestion:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+/* Carte de résultat d'orientation */
+.result-card { margin-top: var(--space-3); padding: var(--space-3); border-radius: var(--radius-sm); background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text); }
+.result-card__title { font-weight: 600; }
+.result-card__actions { display: flex; gap: var(--space-2); margin-top: var(--space-3); flex-wrap: wrap; }

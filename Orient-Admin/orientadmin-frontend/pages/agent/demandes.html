@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demandes orientées - OrientAdmin</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body data-role="agent" data-page="demandes" data-root="../../">
+  <div id="site-header"></div>
+  <div class="app-shell">
+    <aside id="site-sidebar"></aside>
+    <main id="contenu" class="app-shell__main">
+      <header class="page-head">
+        <div>
+          <h1>Demandes orientées vers ce service</h1>
+        </div>
+      </header><div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Référence</th>
+              <th>Citoyen</th>
+              <th>Objet</th>
+              <th>Confiance</th>
+              <th>Statut</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#D-1042</td>
+              <td>HARIMINO Faly</td>
+              <td>Légalisation diplôme</td>
+              <td>92 %</td>
+              <td><span class="badge badge--info">Orientée</span></td>
+            </tr>
+            <tr>
+              <td>#D-1039</td>
+              <td>RABE Tiana</td>
+              <td>Certificat de résidence</td>
+              <td>54 %</td>
+              <td><span class="badge badge--warning">À vérifier</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><div class="mt-5">
+        <div class="card">
+          <h3>Demande #D-1039 - confiance faible</h3>
+          <p class="text-muted">Le moteur hésite entre ce service et « Fokontany ». Confirmez ou réorientez.</p>
+          <div class="row">
+            <button class="btn btn--success btn--sm" type="button">Confirmer ce service</button>
+            <button class="btn btn--outline btn--sm" type="button">Réorienter vers Fokontany</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id="site-footer"></div>
+  <script src="../../assets/js/config/nav-config.js"></script>
+  <script src="../../assets/js/components/layout.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
